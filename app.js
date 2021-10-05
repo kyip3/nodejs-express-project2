@@ -6,11 +6,11 @@ const app = express();
 //app.use(express.static(path.join(__dirname,"public")));
 
 app.get('/',(req,res)=>{
-    res.sendFile(path.join(__dirname,"public/home.html"));
+    res.sendFile(path.join(__dirname,"views/home.html"));
 });
 
 app.get('/users',(req,res)=>{
-    res.sendFile(path.join(__dirname,"public/users.html"));
+    res.sendFile(path.join(__dirname,"views/users.html"));
 });
 
 app.listen(3000);
